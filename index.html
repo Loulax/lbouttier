@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Louis Arnau Bouttier</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- custome style -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    .page-footer {
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--Main Navigation-->
+  <header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar aqua-gradient">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <strong>Louis Arnau Bouttier</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experience.html">Expériences</a>
+            </li>
+            <li class="nav-item">
+              <a href="course.html" class="nav-link">Parcours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Me contacter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main Layout-->
+  <main>
+
+    <div class="container">
+
+      <!--Section: Team v.1-->
+      <section class="text-center team-section">
+
+        <!--Grid row-->
+        <div class="row text-center">
+
+          <!--Grid column-->
+          <div class="col-md-12 mb-4" style="margin-top:100px;">
+
+            <div class="avatar mx-auto">
+              <img src="img/moi.jpg" class="img-fluid rounded-circle z-depth-3" alt="First sample avatar image">
+            </div>
+            <h2 class="display-3 blue-text mb-5 wow" data-wow-delay="0.3s">Louis Arnau Bouttier</h2>
+            <h3 class="font-weight-bold teal-text mb-4">Étudiant</h3>
+            <h3 class="mt-5 black-text">J'ai un grand intérêt pour l'informatique, en particulier dans le high-tech, le développement et les réseaux.</h3>
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+    </div>
+
+  </main>
+  <!--Main Layout-->
+
+   <!-- Footer -->
+  <footer class="page-footer fixed-bottom font-small special-color-dark pt-4 mt-15">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1"  data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" href="https://www.facebook.com/louisarnau.bouttier">
+            <i class="fa fa-facebook"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-ins mx-1" data-toggle="tooltip" data-placement="top" title="Instagram" target="_blank" href="https://www.instagram.com/loulax78/">
+            <i class="fa fa-instagram"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-git mx-1" data-toggle="tooltip" data-placement="top" title="Github" target="_blank" href="https://github.com/loulax">
+            <i class="fa fa-github"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1" data-toggle="tooltip" data-placement="top" title="Linkedin" target="_blank" href="https://www.linkedin.com/in/louis-arnau-bouttier-502244156/">
+            <i class="fa fa-linkedin"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+  </footer>
+  <!-- Footer -->
+
+  <!--  SCRIPTS  -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script>
+    new WOW().init();
+
+    // MDB Lightbox Init
+    $(function () {
+      $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    });
+
+    $(function () {
+       $('[data-toggle="tooltip"]').tooltip()
+    });
+
+
+    const footer = document.getElementById('footer');
+    let prevPosition = window.pageYOffset;
+
+    window.onscroll = e => {
+      const diff = window.pageYOffset - prevPosition;
+      prevPosition = window.pageYOffset;
+
+      if(diff < 0) { //Scroll vers le bas
+          footer.classList.add("hidden");
+      } else { //Scroll vers le haut
+          footer.classList.remove("hidden");
+      }
+    }
+  </script>
+</body>
+
+</html>
